@@ -1,0 +1,24 @@
+{
+  "name": "my-modal-plugin",
+  "version": "1.0.0",
+  "description": "A custom modal component for React",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^4.10.0"
+  }
+}
