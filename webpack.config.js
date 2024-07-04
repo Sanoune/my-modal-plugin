@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve("dist"),
+    path: path.resolve(__dirname, "dist"),
     filename: "index.js",
     library: "myModalPlugin",
     libraryTarget: "umd",

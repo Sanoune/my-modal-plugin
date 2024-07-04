@@ -1,8 +1,16 @@
 {
-  "name": "my-modal-plugin",
+  "name": "react-custom-modal-msg-pop",
   "version": "1.0.0",
   "description": "A custom modal component for React",
   "main": "dist/index.js",
+  "keywords": [
+    "react",
+    "modal",
+    "dialog",
+    "component"
+  ],
+  "author": "sarah aba",
+  "license": "MIT",
   "scripts": {
     "build": "webpack --mode production",
     "prepublishOnly": "npm run build"
