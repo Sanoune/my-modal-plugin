@@ -17,8 +17,8 @@ Here's how you can use the Modal component in your React application:
 
 ```javascript
 import React, { useState } from "react";
-import { Modal } from "react-custom-modal-msg-pop";
-import "./App.css";
+import Modal from "./Modal";
+import "./App.css"; // Styles globaux
 
 const App = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -31,11 +31,40 @@ const App = () => {
     setIsModalOpen(false);
   };
 
+  const customOverlayStyle = {
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
+    zIndex: 2000,
+  };
+
+  const customContentStyle = {
+    background: "lightblue",
+    padding: "30px",
+    borderRadius: "12px",
+    maxWidth: "600px",
+  };
+
+  const customCloseButtonStyle = {
+    position: "absolute",
+    top: "10px",
+    right: "10px",
+    background: "none",
+    border: "none",
+    fontSize: "1.8rem",
+    cursor: "pointer",
+    color: "white",
+  };
+
   return (
     <div className="App">
       <h1>My App</h1>
       <button onClick={handleOpenModal}>Open Modal</button>
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        overlayStyle={customOverlayStyle}
+        contentStyle={customContentStyle}
+        closeButtonStyle={customCloseButtonStyle}
+      >
         <p>This is the content of the modal.</p>
       </Modal>
     </div>
