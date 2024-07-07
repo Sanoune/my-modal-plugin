@@ -1,4 +1,4 @@
-# mod-mod-modal-for-msg-registry
+# react-modal-notice
 
 A custom modal component for React.
 
@@ -9,7 +9,7 @@ A custom modal component for React.
 
 2. **Install the package**:
    ```bash
-   npm install react-custom-modal-msg-pop
+   npm install react-modal-notice
    ```
 
 Usage

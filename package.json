@@ -1,6 +1,6 @@
 {
-  "name": "react-custom-modal-msg-pop",
-  "version": "1.0.1",
+  "name": "react-modal-notice",
+  "version": "1.0.2",
   "description": "A custom modal component for React",
   "main": "dist/index.js",
   "keywords": [
