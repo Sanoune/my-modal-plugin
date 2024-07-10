@@ -1,6 +1,6 @@
 {
   "name": "react-modal-notice",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A custom modal component for React",
   "main": "dist/index.js",
   "keywords": [

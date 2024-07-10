@@ -17,7 +17,7 @@ Here's how you can use the Modal component in your React application:
 
 ```javascript
 import React, { useState } from "react";
-import Modal from "./Modal";
+import Modal from "react-modal-notice";
 import "./App.css"; // Styles globaux
 
 const App = () => {
